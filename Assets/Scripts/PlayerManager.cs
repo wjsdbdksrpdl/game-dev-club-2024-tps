@@ -24,6 +24,11 @@ public class PlayerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        isAimValid();
+    }
+
+    private void isAimValid()
+    {
         if(input.aim)
         {
             aimCam.gameObject.SetActive(true);
